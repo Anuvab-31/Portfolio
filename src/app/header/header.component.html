@@ -1,0 +1,48 @@
+<!-- <p>header works!</p> -->
+
+
+  <!-- <nav class="navbar navbar-expand-lg highlightTextIn" [class.header_change]="header_variable">
+    <div class="">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" (click)="toggleNavBar()" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <div class="icon"><i class="fa-solid fa-bars"></i></div>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show':navBarOpen}">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+
+  <nav [class.header_change]="header_variable">
+    <!-- <div class="logo" style="color: aquamarine; z-index: 1;">Anuvab</div> -->
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn" >
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li> <a class="nav-link" href="#home" [class.active]="home" (click)="onNavigate('home')"   >Home</a></li>
+      <li> <a class="nav-link" href="#about" [class.active]="about" (click)="onNavigate('about')"  >About Me</a></li>
+      <li> <a class="nav-link" href="#project" [class.active]="project" (click)="onNavigate('project')">Project</a></li>
+      <li> <a class="nav-link" href="#skill" [class.active]="skill"   (click)="onNavigate('skill')" >Skill</a></li>
+      <li> <a class="nav-link" href="#contact" [class.active]="contact" (click)="onNavigate('contact')">Contact Me</a></li>
+    </ul>
+  </nav>

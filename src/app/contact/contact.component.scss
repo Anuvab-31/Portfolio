@@ -1,0 +1,161 @@
+.main {
+  height: auto;
+  width: 100%;
+  background-color: black;
+}
+.para1 {
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 20px;
+  text-align: center;
+}
+.para2 {
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 18px;
+  text-align: center;
+}
+
+.form-label {
+  text-align: left;
+  color: white;
+}
+.left-content {
+  color: #ffffff;
+  opacity: 0.9;
+  padding-top: 4.5rem;
+}
+.right-content {
+  margin-top: 0.5rem;
+  background-color: #242526;
+  border-radius: 10px;
+}
+.fas {
+  color: #f9004d;
+}
+.far {
+  color: #f9004d;
+}
+.contact {
+  color: #ffffff;
+  opacity: 0.9;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.copyright {
+  font-size: 1.3rem;
+}
+.text-input {
+  width: 100%;
+}
+.btn {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: transparent;
+  color: #ffffff;
+  opacity: 0.9;
+  border: #f9004d 1px solid;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.4s linear;
+}
+.btn:hover {
+  background-color: #f9004d;
+  cursor: pointer;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.india {
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.india .fas {
+  color: #f9004d;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.signature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #ffffff;
+  opacity: 0.9;
+  margin-top: 0.5rem;
+}
+.dynamic-text {
+  font-size: 1.3rem;
+  color: #ffffff;
+  opacity: 0.9;
+  width: 0ch;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 6s infinite;
+  border-right: 2px solid #ffffff;
+  font-family: 'Playball', cursive !important;
+}
+@keyframes text {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 13ch;
+  }
+}
+.address {
+  display: flex;
+  gap: 1rem;
+}
+.icon {
+  width: 2rem;
+}
+
+@media (max-width: 600px) {
+  .main {
+    height: auto;
+    width: 100%;
+  }
+  .para1 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .para2 {
+    font-size: 13px;
+    margin-top: 1rem;
+  }
+  .row {
+    display: block !important;
+  }
+  .left-content {
+    color: #ffffff;
+    opacity: 0.9;
+    margin-top: 1.5rem;
+  }
+  .contact {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .left-content {
+    padding-top: 1rem !important;
+  }
+  .right-content {
+    margin-top: 1.5rem;
+  }
+  .india {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .signature {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+}

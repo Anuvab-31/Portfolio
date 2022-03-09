@@ -1,0 +1,105 @@
+nav {
+  // height: auto;
+  background: transparent;
+  display: flex;
+
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  height: auto;
+  justify-content: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  margin-left: 3rem;
+  white-space: nowrap;
+}
+nav a {
+  align-items: center;
+  position: relative;
+  
+  
+}
+nav a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 90%;
+  width: 0%;
+  height: 1px;
+  background-color: #f9004d;
+  transition: all 0.5s linear;
+}
+nav a:hover:before{
+  width: 100%;
+}
+nav ul li a:hover {
+  cursor: pointer;
+  color: #f9004d;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+}
+nav .menu-btn i {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.header_change {
+  position: fixed;
+  background-color: #121212;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.active{
+  color: #f9004d !important;
+}
+.chnage-to-gray{
+  color: white !important;
+}
+#click {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    position: fixed;
+    top: 40px;
+    left: -100%;
+    background-color: #121212;
+    height: 60vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  nav ul li {
+    margin: 40px 0;
+  }
+  nav ul li a {
+    font-size: 20px;
+    display: block;
+  }
+  nav .menu-btn i {
+    display: block;
+    margin: 15px 0px 0px 20rem;
+  }
+  #click:checked ~ .menu-btn i::before {
+    content: "\f00d";
+  }
+  #click:checked ~ ul {
+    left: 0%;
+  }
+}

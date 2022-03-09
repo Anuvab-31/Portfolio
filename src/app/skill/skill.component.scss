@@ -1,0 +1,36 @@
+.main {
+    height: 70vh;
+    width: 100%; 
+    background-color: #121212;
+}
+// .pie-chart{
+//     // padding-top: 1rem;
+//     display: block;
+//     height: 8rem;
+//     width: 8rem;
+//     margin: 0 auto;
+//   }
+
+label{
+    color: white;
+    margin-top: 1rem;
+}
+.progress{
+    border-radius: 10px;
+}
+.progress-bar{
+    border-radius: 10px;
+    background-color:#f9004d;
+   
+}
+.skill-set{
+    margin-bottom: 2rem;
+}
+  @media  (max-width:600px){
+    .main {
+        height: auto !important; 
+        width: 100%;
+    }
+    
+    
+}
